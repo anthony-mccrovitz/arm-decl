@@ -1,73 +1,44 @@
-# Welcome to your Lovable project
+# ARMDecl 🧠🔧  
+A natural language ↔ assembly translator for ARMv8, built for students, developers, and educators.  
+Translate between plain English and ARMv8 assembly instructions — no syntax memorization needed.
 
-## Project info
+## 🚀 About
 
-**URL**: https://lovable.dev/projects/e94ec851-0f57-4c77-b8c8-cfe3f22ff58b
+**ARMDecl** is a tool that helps you understand and write ARMv8 assembly by letting you:
+- Translate ARMv8 instructions into plain English
+- Write natural English and see the corresponding ARMv8 instruction
+- Quickly test, debug, and learn new instructions
 
-## How can I edit this code?
+This project was built as a CS 250-inspired tool at Purdue to help beginners learn ARMv8 syntax with ease.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ✨ Features (v1.2)
+- 🔁 **Bidirectional Translation**: English ⇄ ARMv8 instructions
+- 📚 **Instruction Support**: ADD, SUB, LSL, LSR, MUL, AND, ORR, EOR, LDUR, STUR, CBZ, CBNZ, BL, B, RET
+- 🔍 **Fuzzy Matching** for English queries (e.g., “add X2 and X3” → `ADD X1, X2, X3`)
+- 📋 **Multi-line Input** support (up to 3 lines of ARMv8)
+- ✅ **Purdue Instruction Set** (`LDUR`, `STUR` used instead of `LDR`/`STR`)
+- 🔄 **Copy buttons**, example suggestions, input reset on tab switch
+- 📱 **Responsive UI** with horizontal scroll and mobile-friendly layout
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e94ec851-0f57-4c77-b8c8-cfe3f22ff58b) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
+- **React + TypeScript**
+- **Tailwind CSS**
+- **Vite**
+- **ShadCN UI Components**
+- Regex-based translation logic
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧪 Run Locally
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Clone and run the project locally:
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+git clone https://github.com/anthony-mccrovitz/arm-decl.git
+cd arm-decl
+npm install
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e94ec851-0f57-4c77-b8c8-cfe3f22ff58b) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
